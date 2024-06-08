@@ -27,6 +27,11 @@ android {
             )
         }
     }
+
+    composeOptions {
+        kotlinCompilerExtensionVersion = libs.versions.compose.get()
+    }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
@@ -39,6 +44,7 @@ android {
 dependencies {
     implementation(libs.bundles.android)
     implementation(libs.bundles.jetbrains)
+    implementation(libs.bundles.compose)
     testImplementation(libs.bundles.test)
     androidTestImplementation(libs.bundles.instrumented.test)
 }
