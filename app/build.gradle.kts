@@ -48,6 +48,9 @@ dependencies {
     implementation(libs.bundles.android)
     implementation(libs.bundles.jetbrains)
     implementation(libs.bundles.compose)
+
+    debugImplementation(libs.androidx.ui.tooling)
+
     testImplementation(libs.bundles.test)
     androidTestImplementation(libs.bundles.instrumented.test)
 }

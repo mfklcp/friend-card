@@ -1,8 +1,10 @@
 [versions]
+activity = "1.9.0"
 activity-compose = "1.9.0"
 agp = "8.5.0-alpha08"
 appcompat = "1.7.0"
 compose = "1.5.0"
+constraintlayout = "2.1.4"
 core-ktx = "1.13.1"
 espresso-core = "3.5.1"
 foundation-layout-android = "1.6.7"
@@ -14,8 +16,8 @@ kotlinx-serialization = "1.3.2"
 lifecycle = "2.8.1"
 material = "1.12.0"
 material3-android = "1.2.1"
-activity = "1.9.0"
-constraintlayout = "2.1.4"
+navigation-fragment = "2.7.7"
+ui-tooling = "1.6.7"
 
 [libraries]
 # android
@@ -25,14 +27,16 @@ androidx-constraintlayout = { group = "androidx.constraintlayout", name = "const
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "core-ktx" }
 lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycle" }
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+navigation-fragment-ktx = { group = "androidx.navigation", name = "navigation-fragment-ktx", version.ref = "navigation-fragment" }
+navigation-ui-ktx = { group = "androidx.navigation", name = "navigation-ui-ktx", version.ref = "navigation-fragment" }
 
 # compose
 activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activity-compose" }
 androidx-foundation-layout-android = { group = "androidx.compose.foundation", name = "foundation-layout-android", version.ref = "foundation-layout-android" }
 androidx-material3-android = { group = "androidx.compose.material3", name = "material3-android", version.ref = "material3-android" }
+androidx-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling", version.ref = "ui-tooling" }
 compose-ui = { group = "androidx.compose.ui", name = "ui", version.ref = "compose" }
 compose-material = { group = "androidx.compose.material", name = "material", version.ref = "compose" }
-compose-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview", version.ref = "compose" }
 
 #jetbrains
 kotlinx-serialization-json = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-json", version.ref = "kotlinx-serialization" }
@@ -57,7 +61,9 @@ android = [
     "androidx-appcompat",
     "androidx-core-ktx",
     "lifecycle-runtime-ktx",
-    "material"
+    "material",
+    "navigation-fragment-ktx",
+    "navigation-ui-ktx",
 ]
 compose = [
     "activity-compose",
@@ -66,7 +72,6 @@ compose = [
     "androidx-material3-android",
     "compose-ui",
     "compose-material",
-    "compose-ui-tooling-preview",
 ]
 jetbrains = [
     "kotlinx-datetime",
