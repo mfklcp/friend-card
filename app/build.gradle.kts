@@ -19,6 +19,9 @@ android {
     }
 
     buildTypes {
+        buildFeatures {
+            compose = true
+        }
         release {
             isMinifyEnabled = false
             proguardFiles(
